@@ -15,27 +15,32 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-        Drop();
+        if (IsPickedUp == true)
+        {
+            Drop();
+        }
     }
 
     public void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (IsPickedUp == false)
         {
-            PickUpText.SetActive(true);
-
-            if (Input.GetKey(KeyCode.E))
+            if (other.gameObject.tag == "Player")
             {
-                this.gameObject.SetActive(false);
-                WeaponOnPlayer.SetActive(true);
-                PickUpText.SetActive(false);
-                IsPickedUp = true;
+                PickUpText.SetActive(true);
+                
+                if (Input.GetKey(KeyCode.E))
+                {
+                    this.gameObject.SetActive(false);
+                    WeaponOnPlayer.SetActive(true);
+                    PickUpText.SetActive(false);
+                    IsPickedUp = true;
+                }
             }
         }
     }
     public void Drop()
     {
-        if (IsPickedUp == true)
         {
             if (Input.GetKey(KeyCode.G))
             {
