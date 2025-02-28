@@ -5,15 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - Bullet
+  - Fence
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Pickable
-  - 
+  - Bullet
   - 
   - 
   - 
