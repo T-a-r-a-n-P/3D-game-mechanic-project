@@ -7,6 +7,7 @@ public class PlayerShoot : MonoBehaviour
     public float bulletSpeed;
     public float fireRate, bulletDamage;
     public bool isAuto;
+    public bool oneUse;
 
     public Transform bulletSpawnTransform;
     public GameObject bulletPrefab;
@@ -23,6 +24,10 @@ public class PlayerShoot : MonoBehaviour
             if (Input.GetButton("Fire1")&& timer <= 0)
             {
                 Shoot();
+                if(oneUse)
+                {
+                    this.gameObject.SetActive(false);
+                }
             }
         }
         else
@@ -30,6 +35,10 @@ public class PlayerShoot : MonoBehaviour
             if(Input.GetButtonDown("Fire1") && timer <= 0)
             {
                 Shoot();
+                if(oneUse)
+                {
+                    this.gameObject.SetActive(false);
+                }
             }
         }
     }

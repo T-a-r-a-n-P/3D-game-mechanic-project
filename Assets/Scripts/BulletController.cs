@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
     public float damage;
     public float lifeTime;
+    public bool despawnOnCollision;
 
     private void Update()
     {
