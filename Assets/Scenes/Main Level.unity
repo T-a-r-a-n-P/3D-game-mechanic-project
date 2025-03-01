@@ -10656,6 +10656,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114103969153859672, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: maxZoomFOV
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1963958859065967600, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -12292,6 +12296,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6274116477562725703, guid: 0f148655956ab0a459ab4154af2b38d0, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 7400000, guid: 216d59a6fe00aa04a8b46beedba273db, type: 2}
     - target: {fileID: 6274116477562725703, guid: 0f148655956ab0a459ab4154af2b38d0, type: 3}
       propertyPath: target
       value: 

@@ -30,7 +30,19 @@ public class Enemymovement : MonoBehaviour
         {
             animtor.enabled = true;
             isntAttacking = false;
-            //anim.Play();
+            
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        
+        if(collision.gameObject.tag == "Fence")
+        {
+            Debug.Log("ss");
+          //  animtor.enabled = false;
+            //isntAttacking = true;
+            //
         }
     }
 }
