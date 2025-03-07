@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Fencedie : MonoBehaviour
 {
-    static float health = 1000;
-    public bool isAlive = true;
+    public float health = 1000;
 
     void Update()
     {
@@ -25,8 +24,7 @@ public class Fencedie : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
-            isAlive = false;
+            transform.position = new Vector3(0,-10,0);
         } 
     }
 }

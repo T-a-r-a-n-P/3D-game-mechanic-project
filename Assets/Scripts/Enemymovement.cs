@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Enemymovement : MonoBehaviour
 {
@@ -10,9 +11,12 @@ public class Enemymovement : MonoBehaviour
     public float speed;
     public bool isntAttacking;
 
+
     public void Start()
     {
         animtor = gameObject.GetComponent<Animator>();
+        target = GameObject.Find("Corn_Fruit (1)").transform;
+
     }
     private void Update()
     {
@@ -39,7 +43,6 @@ public class Enemymovement : MonoBehaviour
         {
             animtor.enabled = false;
             isntAttacking = true;
-            
         }
     }
 }
