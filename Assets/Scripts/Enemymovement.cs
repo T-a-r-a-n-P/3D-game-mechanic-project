@@ -6,7 +6,6 @@ using UnityEngine;
 public class Enemymovement : MonoBehaviour
 {
     public Transform target;
-    public AnimationClip anim;
     public Animator animtor;
     public float speed;
     public bool isntAttacking;
@@ -24,13 +23,23 @@ public class Enemymovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Fence")
+        if(other.gameObject.tag == "Fence")
         {
             animtor.enabled = true;
             isntAttacking = false;
-            //anim.Play();
+            
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag == "Fence")
+        {
+            animtor.enabled = false;
+            isntAttacking = true;
+            
         }
     }
 }
