@@ -29,20 +29,34 @@ public class Enemymovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        float distance = Vector3.Distance(transform.position, target.transform.position);
+        Debug.Log(distance);
         if(other.gameObject.tag == "Fence")
         {
             animtor.enabled = true;
             isntAttacking = false;
-            
+        }
+        if(distance < 1.35)
+        {
+            animtor.enabled = true;
+            isntAttacking = false;
         }
     }
-
+        
     void OnTriggerExit(Collider other)
     {
+        float distance = Vector3.Distance(transform.position, target.transform.position);
+        Debug.Log(distance);
         if(other.gameObject.tag == "Fence")
         {
             animtor.enabled = false;
             isntAttacking = true;
         }
+        if(distance < 1.35)
+        {
+            animtor.enabled = false;
+            isntAttacking = true;
+        }
     }
+    
 }
