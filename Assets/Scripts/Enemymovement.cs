@@ -1,22 +1,41 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Enemymovement : MonoBehaviour
 {
+    public List<GameObject> targets;
     public Transform target;
     public Animator animtor;
     public float speed;
     public bool isntAttacking;
+    public int arraylength;
+    public int num;
 
 
     public void Start()
     {
         animtor = gameObject.GetComponent<Animator>();
-        target = GameObject.Find("Corn_Fruit (1)").transform;
+        System.Random rng = new System.Random(); 
+        FindTaggedObjects();
 
+        num = rng.Next(targets.Count);
+        target = targets[num].transform;
+    }
+
+    void FindTaggedObjects()
+    {
+        GameObject[] taggedArray = GameObject.FindGameObjectsWithTag("Crops");
+        targets = taggedArray.ToList();
+        foreach (GameObject obj in targets)
+        {
+            Debug.Log("Found object: " + obj.name);
+        }
     }
     private void Update()
     {
@@ -30,7 +49,6 @@ public class Enemymovement : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         float distance = Vector3.Distance(transform.position, target.transform.position);
-        Debug.Log(distance);
         if(other.gameObject.tag == "Fence")
         {
             animtor.enabled = true;
@@ -46,7 +64,6 @@ public class Enemymovement : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         float distance = Vector3.Distance(transform.position, target.transform.position);
-        Debug.Log(distance);
         if(other.gameObject.tag == "Fence")
         {
             animtor.enabled = false;
