@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000010010219526}
   - component: {fileID: 64000011852758562}
   - component: {fileID: 4442393856984445357}
+  - component: {fileID: 7026706937383246898}
   m_Layer: 0
   m_Name: Pumpkin_Plant
   m_TagString: Crops
@@ -128,3 +129,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0617688, y: 0.55137193, z: 1.0765734}
   m_Center: {x: -0.08187139, y: 0.27568597, z: 0.012179255}
+--- !u!114 &7026706937383246898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010824186820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c864c5dc04ceca74d97e2f89881f49c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500

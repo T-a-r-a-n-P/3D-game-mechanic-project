@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000012642422750}
   - component: {fileID: 64000012883916708}
   - component: {fileID: 6067689221445140502}
+  - component: {fileID: 1371149675336852455}
   m_Layer: 0
   m_Name: Turnip_Plant
   m_TagString: Crops
@@ -128,3 +129,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1498691, y: 0.7777831, z: 1.2665217}
   m_Center: {x: 0.112430036, y: 0.388894, z: -0.03455496}
+--- !u!114 &1371149675336852455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010164499024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c864c5dc04ceca74d97e2f89881f49c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500

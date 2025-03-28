@@ -16,6 +16,7 @@ public class Enemymovement : MonoBehaviour
     public bool isntAttacking;
     public int arraylength;
     public int num;
+    public CropsDie deadcrops;
 
 
     public void Start()
@@ -26,19 +27,18 @@ public class Enemymovement : MonoBehaviour
 
         num = rng.Next(targets.Count);
         target = targets[num].transform;
+
+        deadcrops = target.GetComponent<CropsDie>();
     }
 
     void FindTaggedObjects()
     {
         GameObject[] taggedArray = GameObject.FindGameObjectsWithTag("Crops");
         targets = taggedArray.ToList();
-        foreach (GameObject obj in targets)
-        {
-            Debug.Log("Found object: " + obj.name);
-        }
     }
     private void Update()
     {
+        cropsdead();
         transform.LookAt(target.position);
         if(isntAttacking)
         {
@@ -60,7 +60,7 @@ public class Enemymovement : MonoBehaviour
             isntAttacking = false;
         }
     }
-        
+
     void OnTriggerExit(Collider other)
     {
         float distance = Vector3.Distance(transform.position, target.transform.position);
@@ -75,5 +75,19 @@ public class Enemymovement : MonoBehaviour
             isntAttacking = true;
         }
     }
-    
+    void cropsdead()
+    {
+        if (deadcrops.health <= 0) 
+        {
+            Debug.Log("wusht");
+            animtor.enabled = false;
+            isntAttacking = true;
+            System.Random rng = new System.Random(); 
+            num = rng.Next(targets.Count);
+            target = targets[num].transform;
+            
+            deadcrops = target.GetComponent<CropsDie>();
+            
+        }
+    }
 }

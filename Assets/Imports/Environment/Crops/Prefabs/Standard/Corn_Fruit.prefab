@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 23000014227985804}
   - component: {fileID: 64000013077887286}
   - component: {fileID: 4665305880215265142}
+  - component: {fileID: 9031049943820381156}
+  - component: {fileID: 1519367284845288642}
   m_Layer: 0
   m_Name: Corn_Fruit
   m_TagString: Crops
@@ -128,3 +130,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8655319, y: 0.65559703, z: 0.91926575}
   m_Center: {x: -0.0217247, y: 0.024400324, z: -0.001832962}
+--- !u!65 &9031049943820381156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012087161104}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8655319, y: 0.65559703, z: 0.91926575}
+  m_Center: {x: -0.0217247, y: 0.024400324, z: -0.001832962}
+--- !u!114 &1519367284845288642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012087161104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c864c5dc04ceca74d97e2f89881f49c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500

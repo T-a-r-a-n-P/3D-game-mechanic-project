@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000013209538348}
   - component: {fileID: 64000011314148548}
   - component: {fileID: 5657309133589909324}
+  - component: {fileID: 7360708813115568843}
   m_Layer: 0
   m_Name: Eggplant_Plant
   m_TagString: Crops
@@ -128,3 +129,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0963264, y: 1.591089, z: 1.3214402}
   m_Center: {x: 0.05816869, y: 0.79555416, z: 0.17930311}
+--- !u!114 &7360708813115568843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012171661116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c864c5dc04ceca74d97e2f89881f49c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
