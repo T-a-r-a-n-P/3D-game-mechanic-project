@@ -79,7 +79,6 @@ public class Enemymovement : MonoBehaviour
     {
         if (deadcrops.health <= 0) 
         {
-            Debug.Log("wusht");
             animtor.enabled = false;
             isntAttacking = true;
             System.Random rng = new System.Random(); 

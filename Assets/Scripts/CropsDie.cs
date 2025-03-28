@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 
 public class CropsDie : MonoBehaviour
 {
-    public float health = 500;
+    public float health = 1;
     void Update()
     {
         Die();

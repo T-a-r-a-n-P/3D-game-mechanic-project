@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (enemiesAlive < 1)
         {
-            while (enemiesAlive < 10)
+            while (enemiesAlive < 64)
             {
                 if (objectToSpawn != null && spawnPoint != null)
                 {

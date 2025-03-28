@@ -10,9 +10,10 @@ public class FarmHealthManager : MonoBehaviour
     public Slider slider;
     public GameObject gameoverscreen;
 
-    public int currenthealth;
-    void start()
+    public int currenthealth = 64;
+    void Start()
     {
+        Time.timeScale = 1f;
         FindTaggedObjects();
         slider.maxValue = 64;
     }
@@ -21,6 +22,7 @@ public class FarmHealthManager : MonoBehaviour
         currenthealth = targets.Count;
         FindTaggedObjects();
         slider.value = currenthealth;
+        Die();
     }
     void FindTaggedObjects()
     {
@@ -29,8 +31,9 @@ public class FarmHealthManager : MonoBehaviour
     }
     void Die()
     {
-        if (slider.value == 0)
+        if (currenthealth == 0)
         {
+            Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
             gameoverscreen.SetActive(true);
         }
