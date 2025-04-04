@@ -9,6 +9,7 @@ TagManager:
   - Fence
   - Crow
   - Crops
+  - SpawnPointBounds
   layers:
   - Default
   - TransparentFX

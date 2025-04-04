@@ -4,6 +4,7 @@ public class PickUp : MonoBehaviour
 {
     public GameObject WeaponOnPlayer;
     public GameObject PickUpText;
+    public bool holding = false;
 
     void Start()
     {
@@ -18,7 +19,9 @@ public class PickUp : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if(holding == false)
+        {
+          if (other.gameObject.tag == "Player")
             {
                 PickUpText.SetActive(true);
                 
@@ -27,8 +30,10 @@ public class PickUp : MonoBehaviour
                     this.gameObject.SetActive(false);
                     WeaponOnPlayer.SetActive(true);
                     PickUpText.SetActive(false);
+                    holding = true;
                 }
             }
+        }
         
     }
     

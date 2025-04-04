@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Fencedie : MonoBehaviour
 {
-    float health = 1;
+    float health = 1000;
 
     void Update()
     {
