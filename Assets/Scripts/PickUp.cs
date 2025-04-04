@@ -4,10 +4,6 @@ public class PickUp : MonoBehaviour
 {
     public GameObject WeaponOnPlayer;
     public GameObject PickUpText;
-    
-
-
-
     public FirstPersonMovement holdingbool;
 
     void Start()

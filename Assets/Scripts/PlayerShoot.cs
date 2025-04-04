@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
@@ -15,7 +16,7 @@ public class PlayerShoot : MonoBehaviour
     private float timer;
     public FirstPersonMovement holdingbool; 
 
-    void start()
+    void Start()
     {
         holdingbool = GameObject.FindObjectOfType<FirstPersonMovement> ();
     }
@@ -32,8 +33,8 @@ public class PlayerShoot : MonoBehaviour
                 Shoot();
                 if(oneUse)
                 {
-                    holdingbool.Holding = false;
-                    this.gameObject.SetActive(false);
+                    deactivate();
+                    gameObject.SetActive(false);
                 }
             }
         }
@@ -44,8 +45,8 @@ public class PlayerShoot : MonoBehaviour
                 Shoot();
                 if(oneUse)
                 {
-                    holdingbool.Holding = false;
-                    this.gameObject.SetActive(false);
+                    deactivate();
+                    gameObject.SetActive(false);
                 }
             }
         }
@@ -58,5 +59,9 @@ public class PlayerShoot : MonoBehaviour
         bullet.GetComponent<BulletController>().damage = bulletDamage;
 
         timer = 1;
+    }
+    void deactivate()
+    {
+        holdingbool.Holding = false;
     }
 }
