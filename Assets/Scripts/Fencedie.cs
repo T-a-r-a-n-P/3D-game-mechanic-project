@@ -6,6 +6,7 @@ using UnityEngine;
 public class Fencedie : MonoBehaviour
 {
     float health = 1000;
+    public bool alive = true;
 
     void Update()
     {
@@ -22,9 +23,10 @@ public class Fencedie : MonoBehaviour
 
     void Die()
     {
-        if (health <= 0)
+        if (health <= 0 && alive == true)
         {
-            transform.position = new Vector3(0,-10,0);
+            transform.Translate(0,-10,0);
+            alive = false;
         } 
     }
 }
