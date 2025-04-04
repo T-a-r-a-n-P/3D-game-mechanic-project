@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class Fencedie : MonoBehaviour
@@ -25,7 +26,7 @@ public class Fencedie : MonoBehaviour
     {
         if (health <= 0 && alive == true)
         {
-            transform.Translate(0,-10,0);
+            transform.position = new UnityEngine.Vector3(0,-10,0);
             alive = false;
         } 
     }
