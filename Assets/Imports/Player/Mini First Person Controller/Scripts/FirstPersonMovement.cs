@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class FirstPersonMovement : MonoBehaviour
 {
+    public bool Holding;
     public float speed = 5;
 
     [Header("Running")]
@@ -16,7 +17,10 @@ public class FirstPersonMovement : MonoBehaviour
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
 
-
+    void start()
+    {
+        Holding = false;
+    }
     void Awake()
     {
         // Get the rigidbody on this.

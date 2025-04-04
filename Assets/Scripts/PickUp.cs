@@ -4,22 +4,21 @@ public class PickUp : MonoBehaviour
 {
     public GameObject WeaponOnPlayer;
     public GameObject PickUpText;
-    public bool holding = false;
+    
+
+
+
+    public FirstPersonMovement holdingbool;
 
     void Start()
     {
         WeaponOnPlayer.SetActive(false);
         PickUpText.SetActive(false);
+        holdingbool = GameObject.FindObjectOfType<FirstPersonMovement> ();
     }
-
-    void Update()
-    {
-    
-    }
-
     public void OnTriggerStay(Collider other)
     {
-        if(holding == false)
+        if(holdingbool.Holding == false)
         {
           if (other.gameObject.tag == "Player")
             {
@@ -30,7 +29,7 @@ public class PickUp : MonoBehaviour
                     this.gameObject.SetActive(false);
                     WeaponOnPlayer.SetActive(true);
                     PickUpText.SetActive(false);
-                    holding = true;
+                    holdingbool.Holding = true;
                 }
             }
         }

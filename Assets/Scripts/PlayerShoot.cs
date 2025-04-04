@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
+
     public float bulletSpeed;
     public float fireRate, bulletDamage;
     public bool isAuto;
@@ -12,7 +13,12 @@ public class PlayerShoot : MonoBehaviour
     public Transform bulletSpawnTransform;
     public GameObject bulletPrefab;
     private float timer;
+    public FirstPersonMovement holdingbool; 
 
+    void start()
+    {
+        holdingbool = GameObject.FindObjectOfType<FirstPersonMovement> ();
+    }
     void Update()
     {
         if(timer > 0)
@@ -26,6 +32,7 @@ public class PlayerShoot : MonoBehaviour
                 Shoot();
                 if(oneUse)
                 {
+                    holdingbool.Holding = false;
                     this.gameObject.SetActive(false);
                 }
             }
@@ -37,6 +44,7 @@ public class PlayerShoot : MonoBehaviour
                 Shoot();
                 if(oneUse)
                 {
+                    holdingbool.Holding = false;
                     this.gameObject.SetActive(false);
                 }
             }

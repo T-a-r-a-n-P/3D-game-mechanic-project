@@ -5,10 +5,13 @@ using UnityEngine;
 public class Drop : MonoBehaviour
 {
     public GameObject WeaponOnFloor;
-    public PickUp peckap;
+public GameObject playerholder;
+
+    public FirstPersonMovement holdingbool;    
     void Start()
     {
-        peckap = GameObject.FindObjectOfType<PickUp> ();
+        playerholder = GameObject.Find("Player");
+        holdingbool = GameObject.FindObjectOfType<FirstPersonMovement>();
     }
     public void Dropping()
     {
@@ -17,7 +20,7 @@ public class Drop : MonoBehaviour
             Debug.Log("dropping weapon...");
             this.gameObject.SetActive(false);
             WeaponOnFloor.SetActive(true);
-            peckap.holding = false;
+            holdingbool.Holding = false;
         }
     }
     
