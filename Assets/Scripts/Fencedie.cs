@@ -26,7 +26,7 @@ public class Fencedie : MonoBehaviour
     {
         if (health <= 0 && alive == true)
         {
-            transform.position = new UnityEngine.Vector3(0,-10,0);
+            transform.position += new UnityEngine.Vector3(0f,-10f,0f);
             alive = false;
         } 
     }

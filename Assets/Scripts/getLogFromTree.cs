@@ -15,7 +15,7 @@ public class getLogFromTree : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" & holdinglog == false)
         {
             pickuptext.SetActive(true);
             if (Input.GetKey(KeyCode.E))
