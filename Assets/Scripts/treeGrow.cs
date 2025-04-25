@@ -17,11 +17,6 @@ public class treeGrow : MonoBehaviour
         tree.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")

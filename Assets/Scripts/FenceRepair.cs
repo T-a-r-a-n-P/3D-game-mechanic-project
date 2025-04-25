@@ -5,23 +5,25 @@ using UnityEngine;
 public class FenceRepair : MonoBehaviour
 {
     public getLogFromTree logholding;
+    public logholder x;
     public Fencedie deadfence;
+    public bool repair = false;
 
     void Update()
     {
-        logholding = GameObject.Find("log_1a (1)").GetComponent<getLogFromTree> ();
+        x = GameObject.FindObjectOfType<logholder> ();
+        logholding = GameObject.FindObjectOfType<getLogFromTree> ();
         deadfence = GameObject.FindObjectOfType<Fencedie> ();
     }
-
-    
-    void OnTriggerEnter(Collider other)
+     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player" && logholding.holdinglog == true && deadfence.alive == false)
+        if(other.gameObject.tag == "Player" && x.active == true)
         {
-            Debug.Log("nnnnnnnn");
-            transform.position += new UnityEngine.Vector3(0f,10f,0f);
+            repair = true;
             logholding.loginhand.SetActive(false);
             logholding.holdinglog = false;
         }
     }
+
+
 }
