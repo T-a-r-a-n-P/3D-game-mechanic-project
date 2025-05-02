@@ -7,6 +7,7 @@ public class FenceRepair : MonoBehaviour
     public getLogFromTree logholding;
     public logholder x;
     public Fencedie deadfence;
+    public GameObject Fence;
     public bool repair = false;
 
     void Update()
@@ -19,7 +20,7 @@ public class FenceRepair : MonoBehaviour
     {
         if(other.gameObject.tag == "Player" && x.active == true)
         {
-            repair = true;
+            Fence.SetActive(true);
             logholding.loginhand.SetActive(false);
             logholding.holdinglog = false;
         }
