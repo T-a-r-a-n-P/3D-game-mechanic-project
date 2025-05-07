@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 3603720224944477701}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.1266611}
+  m_LocalScale: {x: 1, y: 1, z: 1.05685}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7405549215014256857}
@@ -129,7 +129,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8351e15881fd647a4c62a59f3c1d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1000
   alive: 1
+  repaircheck: {fileID: 8745094510831601656, guid: 21b99eda75eab1b479e477e4432d0ca8, type: 3}
+  repaircheckTransform: {fileID: 3603720224944477701}
+  repairdafence: {fileID: 0}
 --- !u!1 &4462576588782491214
 GameObject:
   m_ObjectHideFlags: 0
