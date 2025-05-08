@@ -9,15 +9,21 @@ public class Fencedie : MonoBehaviour
 {
     public float health = 1000;
     public bool alive = true;
-    
+   // public GameObject repaircheck;
+    //public GameObject repaircheckTransform;
+    //public FenceRepair repairdafence;
 
    void start()
    {
-
+       // repairdafence = GameObject.FindObjectOfType<FenceRepair> ();
    }
     void Update()
     {
         Die();
+        // if(repairdafence.repair == true)
+        // {
+        //     transform.position = repaircheckTransform.transform.position;
+        // }
     }
 
     void OnTriggerStay(Collider other)
@@ -37,4 +43,8 @@ public class Fencedie : MonoBehaviour
         } 
     }
 
+    void createChecker()
+    {
+       // GameObject collisionchecker = Instantiate(repaircheck, repaircheckTransform.transform.position, repaircheckTransform.transform.rotation);
+    }
 }

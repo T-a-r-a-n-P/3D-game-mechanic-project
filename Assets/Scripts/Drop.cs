@@ -5,7 +5,7 @@ using UnityEngine;
 public class Drop : MonoBehaviour
 {
     public GameObject WeaponOnFloor;
-public GameObject playerholder;
+    public GameObject playerholder;
 
     public FirstPersonMovement holdingbool;    
     void Start()

@@ -9207,6 +9207,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheck
+      value: 
+      objectReference: {fileID: 8745094510831601656, guid: 21b99eda75eab1b479e477e4432d0ca8, type: 3}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheckTransform
+      value: 
+      objectReference: {fileID: 1829915107}
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
@@ -16767,7 +16775,10 @@ PrefabInstance:
     - {fileID: 721995473443598296, guid: 6c8ddb0273777ff48a4db43dbb615297, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2330177599577044143, guid: 6c8ddb0273777ff48a4db43dbb615297, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1249425087}
   m_SourcePrefab: {fileID: 100100000, guid: 6c8ddb0273777ff48a4db43dbb615297, type: 3}
 --- !u!1 &1055618412
 GameObject:
@@ -17841,7 +17852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1136987121
 Transform:
   m_ObjectHideFlags: 0
@@ -18329,6 +18340,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+--- !u!1 &1172318595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+  m_PrefabInstance: {fileID: 1539060865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1175698119
 GameObject:
   m_ObjectHideFlags: 0
@@ -19255,6 +19271,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3106820199646293525, guid: 6c8ddb0273777ff48a4db43dbb615297, type: 3}
   m_PrefabInstance: {fileID: 1053296407}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1249425087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249425083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ee265d3eefa0e46b1f505d646f0e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
 --- !u!1001 &1251874548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19992,7 +20021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1281730905
 Transform:
   m_ObjectHideFlags: 0
@@ -20846,6 +20875,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheck
+      value: 
+      objectReference: {fileID: 8745094510831601656, guid: 21b99eda75eab1b479e477e4432d0ca8, type: 3}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheckTransform
+      value: 
+      objectReference: {fileID: 1739603683}
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
@@ -23439,7 +23476,7 @@ PrefabInstance:
     - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: repaircheckTransform
       value: 
-      objectReference: {fileID: 932965603}
+      objectReference: {fileID: 1172318595}
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
@@ -23689,6 +23726,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheck
+      value: 
+      objectReference: {fileID: 8745094510831601656, guid: 21b99eda75eab1b479e477e4432d0ca8, type: 3}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheckTransform
+      value: 
+      objectReference: {fileID: 416039534}
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
@@ -26693,6 +26738,11 @@ Transform:
   m_Father: {fileID: 995922866}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1739603683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+  m_PrefabInstance: {fileID: 1339871282}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1741532474
 GameObject:
   m_ObjectHideFlags: 0
@@ -27955,6 +28005,11 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
   m_PrefabInstance: {fileID: 265024881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1829915107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+  m_PrefabInstance: {fileID: 582118827}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1833067929
 PrefabInstance:
@@ -30631,6 +30686,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheck
+      value: 
+      objectReference: {fileID: 8745094510831601656, guid: 21b99eda75eab1b479e477e4432d0ca8, type: 3}
+    - target: {fileID: 1784705794841425619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: repaircheckTransform
+      value: 
+      objectReference: {fileID: 2040324253}
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
@@ -30886,6 +30949,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011660475378, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
   m_PrefabInstance: {fileID: 1521064536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2040324253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+  m_PrefabInstance: {fileID: 2014149008}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2049272921
 GameObject:
@@ -32153,7 +32221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2120735817
 Transform:
   m_ObjectHideFlags: 0
